@@ -1,0 +1,30 @@
+services:
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "3005:3005"
+
+  event-service:
+    build: ./event-service
+    ports:
+      - "3001:3001"
+
+  inventory-service:
+    build: ./inventory-service
+    ports:
+      - "3002:3002"
+
+  booking-service:
+    build: ./booking-service
+    ports:
+      - "3003:3003"
+
+  notification-service:
+    build: ./notification-service
+    ports:
+      - "3004:3004"
+
+  payment-service:
+    build: ./payment-service
+    ports:
+      - "3006:3006"
