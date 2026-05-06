@@ -1,0 +1,1 @@
+const express = require("express"); const app = express(); app.get("/health", (req, res) => { res.json({ status: "ok", service: "notification-service" }); }); app.listen(3004, () => { console.log("Notification Service running on port 3004"); });
